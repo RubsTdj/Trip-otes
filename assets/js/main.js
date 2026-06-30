@@ -46,6 +46,37 @@
     revealEls.forEach((el) => el.classList.add("in"));
   }
 
+  /* ---- Hero parallax (souris + capteurs) ---- */
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const hero = document.querySelector(".hero");
+  const phone = document.querySelector("[data-tilt]");
+  const floaties = document.querySelectorAll(".floaty[data-depth]");
+  if (hero && !reduceMotion && window.matchMedia("(pointer: fine)").matches) {
+    let raf = null;
+    let tx = 0, ty = 0;
+    const apply = () => {
+      raf = null;
+      if (phone) {
+        phone.style.setProperty("--ry", (tx * 10).toFixed(2) + "deg");
+        phone.style.setProperty("--rx", (-ty * 10).toFixed(2) + "deg");
+      }
+      floaties.forEach((f) => {
+        const d = parseFloat(f.dataset.depth) || 16;
+        f.style.translate = `${(tx * d).toFixed(1)}px ${(ty * d).toFixed(1)}px`;
+      });
+    };
+    hero.addEventListener("pointermove", (e) => {
+      const r = hero.getBoundingClientRect();
+      tx = (e.clientX - r.left) / r.width - 0.5;   // -0.5 → 0.5
+      ty = (e.clientY - r.top) / r.height - 0.5;
+      if (!raf) raf = requestAnimationFrame(apply);
+    });
+    hero.addEventListener("pointerleave", () => {
+      tx = 0; ty = 0;
+      if (!raf) raf = requestAnimationFrame(apply);
+    });
+  }
+
   /* ---- Animated counters ---- */
   const counters = document.querySelectorAll("[data-count]");
   const animateCount = (el) => {
