@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ff5a7e" />
+
+  <!-- Primary SEO -->
+  <title>Trip'Potes — Organisez vos vacances entre potes, sans prise de tête</title>
+  <meta name="description" content="Trip'Potes, l'app pour organiser ses vacances entre amis, en famille ou en couple : partage des dépenses, vote des activités et suggestions selon votre destination. Téléchargez l'app et planifiez le voyage parfait, ensemble." />
+  <meta name="keywords" content="organiser vacances entre amis, partage de dépenses voyage, tricount vacances, vote activités voyage, planifier voyage groupe, application voyage, voyage en groupe, vacances entre potes" />
+  <meta name="author" content="Trip'Potes" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://trip-potes.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Trip'Potes" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="Trip'Potes — Organisez vos vacances entre potes, sans prise de tête" />
+  <meta property="og:description" content="Partage des dépenses, vote des activités et suggestions selon votre destination. L'app qui rend l'organisation de vos voyages en groupe simple et fun." />
+  <meta property="og:url" content="https://trip-potes.app/" />
+  <meta property="og:image" content="https://trip-potes.app/assets/img/og-cover.svg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Aperçu de l'application Trip'Potes" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Trip'Potes — Organisez vos vacances entre potes" />
+  <meta name="twitter:description" content="Partage des dépenses, vote des activités et suggestions selon votre destination. Le voyage en groupe, enfin sans prise de tête." />
+  <meta name="twitter:image" content="https://trip-potes.app/assets/img/og-cover.svg" />
+
+  <!-- Icons & manifest -->
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- Performance: preconnect to fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Structured data: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Trip'Potes",
+    "operatingSystem": "iOS, ANDROID",
+    "applicationCategory": "TravelApplication",
+    "description": "Application pour organiser ses vacances entre amis, en famille ou en couple : partage des dépenses, vote des activités et suggestions d'activités selon la destination.",
+    "url": "https://trip-potes.app/",
+    "image": "https://trip-potes.app/assets/img/og-cover.svg",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "1280"
+    }
+  }
+  </script>
+
+  <!-- Structured data: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Trip'Potes est-elle gratuite ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Oui, Trip'Potes est gratuite. Vous pouvez créer un voyage, inviter vos proches, partager les dépenses et voter les activités sans payer." }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment fonctionne le partage des dépenses ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Chaque dépense est ajoutée au voyage et répartie automatiquement entre les participants. Trip'Potes calcule qui doit combien à qui, pour rembourser en un clin d'œil." }
+      },
+      {
+        "@type": "Question",
+        "name": "Puis-je utiliser Trip'Potes pour un voyage en couple ou en famille ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Bien sûr ! Trip'Potes s'adapte aux voyages entre amis, en famille comme en couple. Invitez simplement les participants de votre choix." }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment devenir bêta-testeur ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Remplissez le formulaire bêta-testeur sur cette page. Nous vous contactons par e-mail dès qu'une place se libère pour tester l'app en avant-première." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="#top" class="brand" aria-label="Trip'Potes accueil">
+        <span class="brand-logo" aria-hidden="true">🌴</span>
+        <span class="brand-name">Trip'<b>Potes</b></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#features">Fonctionnalités</a></li>
+        <li><a href="#how">Comment ça marche</a></li>
+        <li><a href="#avis">Avis</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#beta" class="btn btn-nav">Devenir bêta-testeur</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="blob blob-1" aria-hidden="true"></div>
+      <div class="blob blob-2" aria-hidden="true"></div>
+      <div class="blob blob-3" aria-hidden="true"></div>
+      <div class="floaty floaty-1" aria-hidden="true">🏖️</div>
+      <div class="floaty floaty-2" aria-hidden="true">🗺️</div>
+      <div class="floaty floaty-3" aria-hidden="true">🍹</div>
+      <div class="floaty floaty-4" aria-hidden="true">✈️</div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span> Bêta ouverte · places limitées</p>
+          <h1 id="hero-title">
+            Organisez vos vacances <span class="grad-text">entre potes</span>, sans prise de tête.
+          </h1>
+          <p class="hero-sub">
+            Entre amis, en famille ou en couple : partagez les dépenses, votez les activités
+            et laissez Trip'Potes vous suggérer les meilleurs plans selon votre destination.
+            Le voyage de groupe, enfin <b>simple et fun</b>. 🎉
+          </p>
+
+          <div class="hero-cta">
+            <a class="store-badge" href="#beta" data-store="ios" aria-label="Télécharger sur l'App Store">
+              <span class="store-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16.5 1.6c.1 1.2-.4 2.3-1.1 3.1-.7.9-1.9 1.6-3.1 1.5-.1-1.2.4-2.4 1.1-3.1.7-.9 2-1.5 3.1-1.5zM20 17.5c-.5 1.2-.8 1.7-1.5 2.7-.9 1.4-2.3 3.2-3.9 3.2-1.5 0-1.8-1-3.8-1-1.9 0-2.3 1-3.8 1-1.6 0-2.9-1.6-3.8-3C.6 19.6.6 16 2 14c1-1.3 2.3-2.1 3.6-2.1 1.4 0 2.3 1 3.5 1 1.1 0 1.8-1 3.5-1 1.1 0 2.3.6 3.2 1.7-2.8 1.6-2.3 5.6.2 3.9z"/></svg></span>
+              <span class="store-text"><small>Télécharger sur</small><strong>App Store</strong></span>
+            </a>
+            <a class="store-badge" href="#beta" data-store="android" aria-label="Disponible sur Google Play">
+              <span class="store-icon store-icon--play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1 9.3-9.3v-.2L3.6 2.3zM16.8 14.9l-3.1-3.1v-.2l3.1-3.1.1.1 3.7 2.1c1 .6 1 1.6 0 2.2l-3.7 2.1-.1-.1zM13.7 11.6l3.1-3.1L4.2 1.5c-.5-.3-1-.3-1.4-.1l11 11.2zM4.2 22.5c.4.2.9.2 1.4-.1l12.6-7.2-3.1-3.1-10.9 10.4z"/></svg></span>
+              <span class="store-text"><small>Disponible sur</small><strong>Google Play</strong></span>
+            </a>
+          </div>
+
+          <ul class="hero-reassure" aria-label="Points de réassurance">
+            <li>✅ 100% gratuit</li>
+            <li>✅ Sans pub</li>
+            <li>✅ Données protégées</li>
+          </ul>
+        </div>
+
+        <!-- Phone mockup -->
+        <div class="hero-phone" data-reveal aria-hidden="true">
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="app-bar">
+                <span>🌴 Week-end à Lisbonne</span>
+                <span class="app-bar-pin">📍</span>
+              </div>
+              <div class="app-card app-card--vote">
+                <h4>On vote ! 🗳️</h4>
+                <div class="vote-row">
+                  <span>🏄 Surf à Costa da Caparica</span>
+                  <span class="vote-count up">8</span>
+                </div>
+                <div class="vote-bar"><i style="width:82%"></i></div>
+                <div class="vote-row">
+                  <span>🍷 Dégustation de Porto</span>
+                  <span class="vote-count">5</span>
+                </div>
+                <div class="vote-bar"><i style="width:55%"></i></div>
+              </div>
+              <div class="app-card app-card--split">
+                <h4>Partage des dépenses 💸</h4>
+                <div class="split-row"><span>🍕 Resto del Mar</span><b>120 €</b></div>
+                <div class="split-pill">Léa te doit <b>30 €</b></div>
+              </div>
+              <div class="app-card app-card--sugg">
+                <h4>Suggestions à Lisbonne ✨</h4>
+                <div class="chip-row">
+                  <span class="chip">🚋 Tram 28</span>
+                  <span class="chip">🥐 Pastéis</span>
+                  <span class="chip">🌅 Miradouro</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust" aria-label="Chiffres clés">
+      <div class="container trust-grid">
+        <div class="trust-item" data-reveal><span class="trust-num" data-count="1280">0</span><span class="trust-label">bêta-testeurs déjà inscrits</span></div>
+        <div class="trust-item" data-reveal><span class="trust-num" data-count="42">0</span><span class="trust-label">destinations couvertes</span></div>
+        <div class="trust-item" data-reveal><span class="trust-num" data-count="98">0</span><span class="trust-label">% de voyages mieux organisés*</span></div>
+        <div class="trust-item" data-reveal><span class="trust-num">4,9<span class="star">★</span></span><span class="trust-label">note moyenne de la bêta</span></div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow eyebrow--center">Tout pour un voyage réussi</p>
+          <h2 id="features-title">Trois super-pouvoirs <span class="grad-text">dans votre poche</span></h2>
+          <p class="section-sub">Fini les groupes de discussion qui partent dans tous les sens. Trip'Potes centralise tout.</p>
+        </header>
+
+        <div class="feature-grid">
+          <article class="feature-card f-pink" data-reveal>
+            <div class="feature-emoji" aria-hidden="true">💸</div>
+            <h3>Partage des dépenses</h3>
+            <p>Ajoutez chaque dépense, Trip'Potes calcule automatiquement qui doit combien à qui. Plus de prise de tête au moment des comptes.</p>
+            <ul class="feature-list">
+              <li>Répartition automatique</li>
+              <li>Soldes en temps réel</li>
+              <li>Remboursements simplifiés</li>
+            </ul>
+          </article>
+
+          <article class="feature-card f-teal" data-reveal>
+            <div class="feature-emoji" aria-hidden="true">🗳️</div>
+            <h3>Vote des activités</h3>
+            <p>Chacun propose ses idées, tout le monde vote. On décide ensemble, démocratiquement, et on évite les débats sans fin.</p>
+            <ul class="feature-list">
+              <li>Propositions illimitées</li>
+              <li>Vote en un tap</li>
+              <li>Le programme se construit tout seul</li>
+            </ul>
+          </article>
+
+          <article class="feature-card f-amber" data-reveal>
+            <div class="feature-emoji" aria-hidden="true">✨</div>
+            <h3>Suggestions par destination</h3>
+            <p>Choisissez votre destination et recevez des idées d'activités sur-mesure : incontournables, pépites locales et bons plans.</p>
+            <ul class="feature-list">
+              <li>Recommandations ciblées</li>
+              <li>Pépites locales</li>
+              <li>Ajout au vote en un clic</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow eyebrow--center">Simple comme bonjour</p>
+          <h2 id="how-title">Votre voyage en <span class="grad-text">4 étapes</span></h2>
+        </header>
+        <ol class="steps">
+          <li class="step" data-reveal><span class="step-num">1</span><h3>Créez le voyage</h3><p>Donnez-lui un nom, une destination et des dates.</p></li>
+          <li class="step" data-reveal><span class="step-num">2</span><h3>Invitez vos potes</h3><p>Un lien, et toute la bande rejoint l'aventure.</p></li>
+          <li class="step" data-reveal><span class="step-num">3</span><h3>Votez & planifiez</h3><p>Proposez les activités, votez, validez le programme.</p></li>
+          <li class="step" data-reveal><span class="step-num">4</span><h3>Profitez 🍹</h3><p>Les dépenses se règlent toutes seules. Détendez-vous.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="avis" id="avis" aria-labelledby="avis-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow eyebrow--center">Ils ont voyagé avec nous</p>
+          <h2 id="avis-title">La bande <span class="grad-text">approuve</span> 💛</h2>
+        </header>
+        <div class="avis-grid">
+          <figure class="avis-card" data-reveal>
+            <div class="stars" aria-label="5 sur 5">★★★★★</div>
+            <blockquote>« Plus jamais de tableur Excel pour nos roadtrips. On a tout voté dans l'app, c'était réglé en 10 minutes. »</blockquote>
+            <figcaption><span class="avatar a1">M</span> Marine, week-end à Lisbonne</figcaption>
+          </figure>
+          <figure class="avis-card" data-reveal>
+            <div class="stars" aria-label="5 sur 5">★★★★★</div>
+            <blockquote>« Le partage des dépenses a sauvé notre amitié 😅 Personne ne se prend plus la tête au moment de rembourser. »</blockquote>
+            <figcaption><span class="avatar a2">K</span> Karim, séjour entre potes à Barcelone</figcaption>
+          </figure>
+          <figure class="avis-card" data-reveal>
+            <div class="stars" aria-label="5 sur 5">★★★★★</div>
+            <blockquote>« Les suggestions par destination nous ont fait découvrir des spots qu'on n'aurait jamais trouvés. Top pour un voyage en famille. »</blockquote>
+            <figcaption><span class="avatar a3">S</span> Sophie, vacances en famille en Crète</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- REASSURANCE -->
+    <section class="reassure" aria-label="Réassurance">
+      <div class="container reassure-grid">
+        <div class="reassure-item" data-reveal><span aria-hidden="true">🆓</span><h3>Gratuit</h3><p>Toutes les fonctions essentielles, sans payer.</p></div>
+        <div class="reassure-item" data-reveal><span aria-hidden="true">🔒</span><h3>Privé & sécurisé</h3><p>Vos données restent les vôtres. Pas de revente.</p></div>
+        <div class="reassure-item" data-reveal><span aria-hidden="true">🚫</span><h3>Zéro pub</h3><p>Une app fluide, sans bannières qui gâchent tout.</p></div>
+        <div class="reassure-item" data-reveal><span aria-hidden="true">⚡</span><h3>Rapide</h3><p>Créez un voyage en moins d'une minute.</p></div>
+      </div>
+    </section>
+
+    <!-- BETA FORM -->
+    <section class="beta" id="beta" aria-labelledby="beta-title">
+      <div class="blob blob-beta" aria-hidden="true"></div>
+      <div class="container beta-grid">
+        <div class="beta-copy" data-reveal>
+          <p class="eyebrow">🎟️ Accès anticipé</p>
+          <h2 id="beta-title">Devenez <span class="grad-text">bêta-testeur</span> Trip'Potes</h2>
+          <p>Rejoignez les premiers explorateurs. Testez l'app en avant-première, donnez votre avis et façonnez le futur du voyage entre potes. Places limitées !</p>
+          <ul class="beta-perks">
+            <li>⭐ Accès gratuit en avant-première</li>
+            <li>💬 Une ligne directe avec l'équipe</li>
+            <li>🎁 Avantages exclusifs au lancement</li>
+          </ul>
+        </div>
+
+        <form class="beta-form" id="beta-form" novalidate data-reveal>
+          <div class="field">
+            <label for="bf-name">Prénom</label>
+            <input type="text" id="bf-name" name="name" autocomplete="given-name" placeholder="Alex" required />
+            <small class="error" data-for="bf-name"></small>
+          </div>
+          <div class="field">
+            <label for="bf-email">E-mail</label>
+            <input type="email" id="bf-email" name="email" autocomplete="email" placeholder="alex@email.com" required />
+            <small class="error" data-for="bf-email"></small>
+          </div>
+          <div class="field">
+            <label for="bf-platform">Vous testez sur</label>
+            <select id="bf-platform" name="platform" required>
+              <option value="">Choisir…</option>
+              <option value="ios">iPhone (iOS)</option>
+              <option value="android">Android</option>
+              <option value="both">Les deux</option>
+            </select>
+            <small class="error" data-for="bf-platform"></small>
+          </div>
+          <label class="checkbox">
+            <input type="checkbox" id="bf-consent" name="consent" required />
+            <span>J'accepte d'être contacté(e) par e-mail au sujet de la bêta.</span>
+          </label>
+          <small class="error" data-for="bf-consent"></small>
+          <button type="submit" class="btn btn-primary btn-block">Je veux tester 🚀</button>
+          <p class="form-note">Aucun spam, promis. Désinscription en un clic.</p>
+          <p class="form-success" id="beta-success" role="status" hidden>🎉 Merci ! Vous êtes sur la liste. On vous écrit très vite.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FINAL CTA / STORES -->
+    <section class="cta-final" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-card" data-reveal>
+          <h2 id="cta-title">Prêt à partir <span class="grad-text">entre potes</span> ? 🌍</h2>
+          <p>Téléchargez Trip'Potes et organisez votre prochain voyage en quelques minutes.</p>
+          <div class="hero-cta hero-cta--center">
+            <a class="store-badge" href="#beta" data-store="ios" aria-label="Télécharger sur l'App Store">
+              <span class="store-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16.5 1.6c.1 1.2-.4 2.3-1.1 3.1-.7.9-1.9 1.6-3.1 1.5-.1-1.2.4-2.4 1.1-3.1.7-.9 2-1.5 3.1-1.5zM20 17.5c-.5 1.2-.8 1.7-1.5 2.7-.9 1.4-2.3 3.2-3.9 3.2-1.5 0-1.8-1-3.8-1-1.9 0-2.3 1-3.8 1-1.6 0-2.9-1.6-3.8-3C.6 19.6.6 16 2 14c1-1.3 2.3-2.1 3.6-2.1 1.4 0 2.3 1 3.5 1 1.1 0 1.8-1 3.5-1 1.1 0 2.3.6 3.2 1.7-2.8 1.6-2.3 5.6.2 3.9z"/></svg></span>
+              <span class="store-text"><small>Télécharger sur</small><strong>App Store</strong></span>
+            </a>
+            <a class="store-badge" href="#beta" data-store="android" aria-label="Disponible sur Google Play">
+              <span class="store-icon store-icon--play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.6 2.3c-.3.3-.5.8-.5 1.4v16.6c0 .6.2 1.1.5 1.4l.1.1 9.3-9.3v-.2L3.6 2.3zM16.8 14.9l-3.1-3.1v-.2l3.1-3.1.1.1 3.7 2.1c1 .6 1 1.6 0 2.2l-3.7 2.1-.1-.1zM13.7 11.6l3.1-3.1L4.2 1.5c-.5-.3-1-.3-1.4-.1l11 11.2zM4.2 22.5c.4.2.9.2 1.4-.1l12.6-7.2-3.1-3.1-10.9 10.4z"/></svg></span>
+              <span class="store-text"><small>Disponible sur</small><strong>Google Play</strong></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow eyebrow--center">On vous explique tout</p>
+          <h2 id="faq-title">Questions <span class="grad-text">fréquentes</span></h2>
+        </header>
+        <div class="faq-list">
+          <details data-reveal><summary>Trip'Potes est-elle vraiment gratuite ?</summary><p>Oui. Créez un voyage, invitez vos proches, partagez les dépenses et votez les activités gratuitement.</p></details>
+          <details data-reveal><summary>Comment fonctionne le partage des dépenses ?</summary><p>Chaque dépense est ajoutée au voyage et répartie automatiquement. Trip'Potes calcule qui doit combien à qui pour rembourser facilement.</p></details>
+          <details data-reveal><summary>Puis-je l'utiliser en couple ou en famille ?</summary><p>Bien sûr ! Entre amis, en famille ou en couple : invitez simplement les participants de votre choix.</p></details>
+          <details data-reveal><summary>Sur quels téléphones est-elle disponible ?</summary><p>Trip'Potes arrive sur iOS et Android. Inscrivez-vous à la bêta pour y accéder en avant-première.</p></details>
+          <details data-reveal><summary>Comment devenir bêta-testeur ?</summary><p>Remplissez le <a href="#beta">formulaire bêta-testeur</a>. On vous contacte dès qu'une place se libère.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand"><span class="brand-logo" aria-hidden="true">🌴</span><span class="brand-name">Trip'<b>Potes</b></span></a>
+        <p>L'app qui rend l'organisation de vos vacances entre potes simple, équitable et fun.</p>
+      </div>
+      <nav class="footer-col" aria-label="Liens produit">
+        <h4>Produit</h4>
+        <a href="#features">Fonctionnalités</a>
+        <a href="#how">Comment ça marche</a>
+        <a href="#beta">Bêta-testeur</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <nav class="footer-col" aria-label="Liens légaux">
+        <h4>Légal</h4>
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+        <a href="#">CGU</a>
+      </nav>
+      <div class="footer-col">
+        <h4>Suivez l'aventure</h4>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="TikTok">🎵</a>
+          <a href="#" aria-label="X (Twitter)">𝕏</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Trip'Potes. Fait avec 💛 pour les voyageurs.</p>
+      <p class="footer-fine">*Statistique indicative issue des retours de la bêta.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

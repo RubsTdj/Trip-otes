@@ -1,0 +1,18 @@
+{
+  "name": "Trip'Potes — Vacances entre potes",
+  "short_name": "Trip'Potes",
+  "description": "Organisez vos vacances entre amis, en famille ou en couple : partage des dépenses, vote des activités et suggestions par destination.",
+  "lang": "fr",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffdf8",
+  "theme_color": "#ff5a7e",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
