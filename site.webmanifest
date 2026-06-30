@@ -3,15 +3,31 @@
   "short_name": "Trip'Potes",
   "description": "Organisez vos vacances entre amis, en famille ou en couple : partage des dépenses, vote des activités et suggestions par destination.",
   "lang": "fr",
+  "dir": "ltr",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#fffdf8",
   "theme_color": "#ff5a7e",
+  "categories": ["travel", "lifestyle", "social"],
   "icons": [
     {
       "src": "assets/img/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ]

@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# Ressource destinée aux IA / LLM
+# https://trip-potes.app/llms.txt
+
 Sitemap: https://trip-potes.app/sitemap.xml

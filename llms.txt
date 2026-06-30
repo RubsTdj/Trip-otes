@@ -1,0 +1,36 @@
+# Trip'Potes
+
+> Trip'Potes est une application mobile (iOS et Android) qui aide à organiser ses vacances entre amis, en famille ou en couple. Elle réunit le partage des dépenses, le vote des activités et des suggestions d'activités personnalisées selon la destination, dans une expérience simple, équitable et fun.
+
+## Présentation
+
+- **Nom** : Trip'Potes
+- **Catégorie** : Voyage / organisation de voyage en groupe
+- **Plateformes** : iOS, Android (bêta en cours)
+- **Prix** : gratuit, sans publicité
+- **Pour qui** : groupes d'amis, familles et couples qui partent en voyage ensemble
+- **Langue** : français
+
+## Fonctionnalités principales
+
+- **Partage des dépenses** : chaque dépense est ajoutée au voyage et répartie automatiquement entre les participants ; l'app calcule qui doit combien à qui pour simplifier les remboursements.
+- **Vote des activités** : chacun propose des idées d'activités et le groupe vote ; le programme du voyage se construit collectivement, sans débats sans fin.
+- **Suggestions par destination** : selon la destination choisie, l'app propose des idées d'activités sur-mesure (incontournables, pépites locales, bons plans) ajoutables au vote en un clic.
+
+## Réassurance
+
+- 100% gratuit
+- Sans publicité
+- Données protégées, pas de revente
+- Création d'un voyage en moins d'une minute
+
+## Pages
+
+- [Accueil / landing page](https://trip-potes.app/) : présentation, fonctionnalités, fonctionnement, avis, FAQ et inscription à la bêta.
+- [Devenir bêta-testeur](https://trip-potes.app/#beta) : formulaire d'inscription au programme de test en avant-première.
+- [FAQ](https://trip-potes.app/#faq) : questions fréquentes sur la gratuité, le partage des dépenses, l'usage en famille/couple et l'accès bêta.
+
+## Contact
+
+- Site : https://trip-potes.app/
+- Programme bêta : https://trip-potes.app/#beta

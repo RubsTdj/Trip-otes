@@ -1,0 +1,12 @@
+/* TEAM */
+  Projet : Trip'Potes
+  Site : https://trip-potes.app/
+
+/* SITE */
+  Standards : HTML5, CSS3, JavaScript (vanilla)
+  Composants : site statique, sans dépendances
+  Langue : Français
+  Dernière mise à jour : 2026-06-30
+
+/* MERCI */
+  À tous les bêta-testeurs qui partent en vacances entre potes. 🌴
